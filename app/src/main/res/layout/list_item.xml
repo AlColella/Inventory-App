@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
     android:background="@color/colorBackground"
+    android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal">
 
     <ImageView
@@ -57,7 +58,8 @@
             tools:text="R$ 23,00"/>
     </LinearLayout>
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/sell_image"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentRight="true"

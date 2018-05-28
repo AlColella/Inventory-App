@@ -16,7 +16,7 @@ public class ProductDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String SQL_CREATE_PET_TABLE = "CREATE TABLE " + ProductEntry.TABLE_NAME + "("
+        String SQL_CREATE_PRODUCT_TABLE = "CREATE TABLE " + ProductEntry.TABLE_NAME + "("
                 + ProductEntry.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + ProductEntry.COLUMN_PRODUCT_NAME + " TEXT NOT NULL, "
                 + ProductEntry.COLUMN_PRODUCT_IMAGE + " BLOB, "
@@ -25,7 +25,7 @@ public class ProductDbHelper extends SQLiteOpenHelper {
                 + ProductEntry.COLUMN_PRODUCT_PROVIDER + " TEXT NOT NULL, "
                 + ProductEntry.COLUMN_PRODUCT_PROVIDER_EMAIL + " TEXT NOT NULL, "
                 + ProductEntry.COLUMN_PRODUCT_PROVIDER_PHONE + " TEXT ); ";
-        db.execSQL(SQL_CREATE_PET_TABLE);
+        db.execSQL(SQL_CREATE_PRODUCT_TABLE);
     }
 
     @Override

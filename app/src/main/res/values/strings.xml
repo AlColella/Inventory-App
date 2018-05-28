@@ -24,4 +24,10 @@
     <string name="update_success">Product updated</string>
     <string name="delete_product_failed">Failed on delete product</string>
     <string name="delete_product_successful">Product deleted</string>
+    <string name="unsaved_changes_dialog_msg">Discard unsaved changes?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Cancel</string>
+    <string name="qtd">Qty : </string>
+    <string name="contact_provider">Contact provider</string>
+    <string name="quantity_error">Product must have 0 or more quantity</string>
 </resources>

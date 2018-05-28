@@ -2,16 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_margin"
-    tools:context=".EditorActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin"
+        tools:context=".EditorActivity">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,12 +48,34 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:orientation="vertical">
+
                 <EditText
                     android:id="@+id/edit_quantity"
                     style="@style/EditorFieldStyle"
                     android:hint="@string/quantity"
                     android:inputType="number" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=" - " />
+
+            <Button
+                android:id="@+id/more_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=" + " />
         </LinearLayout>
 
         <LinearLayout
@@ -72,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:orientation="vertical">
+
                 <EditText
                     android:id="@+id/edit_price"
                     style="@style/EditorFieldStyle"
@@ -94,11 +115,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:orientation="vertical">
+
                 <EditText
                     android:id="@+id/edit_provider"
                     style="@style/EditorFieldStyle"
                     android:hint="@string/provider"
-                    android:inputType="textCapCharacters" />
+                    android:inputType="textCapWords" />
             </LinearLayout>
         </LinearLayout>
 
@@ -116,6 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:orientation="vertical">
+
                 <EditText
                     android:id="@+id/edit_email"
                     style="@style/EditorFieldStyle"
@@ -138,6 +161,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:orientation="vertical">
+
                 <EditText
                     android:id="@+id/edit_phone"
                     style="@style/EditorFieldStyle"
@@ -160,6 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/edit_image"
                     android:layout_width="@dimen/list_item_height"
